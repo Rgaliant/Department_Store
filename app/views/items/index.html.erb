@@ -1,0 +1,9 @@
+<h1>Click a Topic To View Details</h1>
+<%= link_to 'Create a new item', new_department_item_path(@department) %>
+<%= link_to 'Back to departments', root_path %>
+
+<ul>
+  <% @items.each do |item| %>
+    <li><%= link_to item.name, [@department, item] %></li>
+  <% end %>
+</ul>
