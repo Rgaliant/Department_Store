@@ -9,7 +9,7 @@ class DepartmentsController < ApplicationController
   end
 
   def new
-    @departments = Department.new
+    @department = Department.new
     render partial: "departments/form"
   end
 
