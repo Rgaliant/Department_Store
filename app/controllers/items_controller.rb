@@ -15,6 +15,7 @@ class ItemsController < ApplicationController
   end
 
   def edit
+    render partial: "items/form"
   end
 
   def create
